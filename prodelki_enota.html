@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проделки Енота</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: #fffaf7;
+      color: #4a3d3d;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #8b4a39;
+    }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+
+    .product {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeInUp 0.6s ease-in;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .product img:hover {
+      transform: scale(1.03);
+    }
+
+    .price {
+      color: #d35400;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .button {
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #e84343;
+    }
+
+    .about, footer {
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      padding: 0 10px;
+    }
+
+    .about h2 {
+      font-family: 'Pacifico', cursive;
+      color: #8b4a39;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Проделки Енота</h1>
+  </header>
+
+  <div class="catalog">
+    <div class="product">
+      <img src="IMAGE_2025-07-18_11-43-53.jpg" alt="Чековая книжка желаний">
+      <h3>Чековая книжка желаний / купоны желаний</h3>
+      <p class="price">40 000 сум</p>
+      <a href="https://t.me/MA0117" class="button" target="_blank">Заказать</a>
+    </div>
+    <div class="product">
+      <img src="IMAGE_2025-07-18_11-44-21.jpg" alt="50 причин моей любви к тебе">
+      <h3>50 причин моей любви к тебе</h3>
+      <p>50 шоколадок с причинами + конвертик для фото или открытки</p>
+      <p class="price">220 000 сум</p>
+      <a href="https://t.me/MA0117" class="button" target="_blank">Заказать</a>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2>О нас</h2>
+    <p>Меня зовут Анжелика, и я с любовью создаю уникальные подарки, чтобы порадовать ваших близких. Каждый заказ — это частичка тепла, заботы и хорошего настроения. Спасибо, что выбираете нас!</p>
+  </div>
+
+  <footer>
+    <p>
+      Telegram: <a href="https://t.me/prodelki_enota" target="_blank">@prodelki_enota</a> | 
+      Instagram: <a href="https://instagram.com/prodelki_enota" target="_blank">@prodelki_enota</a>
+    </p>
+    <p>&copy; 2025 Проделки Енота</p>
+  </footer>
+</body>
+
+</html>
